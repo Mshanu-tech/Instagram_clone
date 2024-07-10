@@ -1,5 +1,5 @@
 // import Sidebar from "./homeMenu"
-// import { CssBaseline } from "@mui/material"
+import { CssBaseline } from "@mui/material"
 // function Home() {
 //   return (
 //     <>
@@ -24,18 +24,22 @@ import Header from '../../components/Header';
 import Stories from '../../components/Stories';
 import Post from '../../components/Post';
 import Suggestions from '../../components/Suggestions';
+import Sidebar from '../../components/Sidebar';
 
 const Home: React.FC = () => {
   return (
     <Container maxWidth="lg">
-      <Header />
       <Box mt={2}>
         <Grid container spacing={2}>
-          <Grid item xs={12} md={8}>
+          <Grid >
+                 <CssBaseline/>
+            <Sidebar/>
+          </Grid>
+          <Grid >
             <Stories />
             <Post />
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid >
             <Suggestions />
           </Grid>
         </Grid>
