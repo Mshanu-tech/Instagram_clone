@@ -20,7 +20,6 @@ import { CssBaseline } from "@mui/material"
 
 import React from 'react';
 import { Container, Box, Grid } from '@mui/material';
-import Header from '../../components/Header';
 import Stories from '../../components/Stories';
 import Post from '../../components/Post';
 import Suggestions from '../../components/Suggestions';
